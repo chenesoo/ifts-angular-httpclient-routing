@@ -1,0 +1,8 @@
+<h1>Photo List:</h1>
+
+<button (click)="onButtonJSONPlaceholder()">JSONPlaceholder</button>
+<button (click)="onButtonPicsum()">Picsum</button>
+
+<app-jsonplaceholder-list *ngIf="viewPhotoList"></app-jsonplaceholder-list>
+
+<app-picsum-list *ngIf="viewPicsumPhotoList"></app-picsum-list>

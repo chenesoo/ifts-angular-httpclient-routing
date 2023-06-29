@@ -1,0 +1,12 @@
+<button (click)="onPageDown()">-</button>
+<button (click)="onPageUp()">+</button>
+pagina: {{ photoPage }}
+
+<div>
+  <ul>
+    <li *ngFor="let p of photoList">
+      <img [src]="p.thumbnailUrl" />
+      {{ p.title }}
+    </li>
+  </ul>
+</div>
